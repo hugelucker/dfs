@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.matrix {
+  margin: 20px 0;
+}
+
+.matrix__input {
+  margin: 3px;
+  padding: 3px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.matrix__input:hover {
+  background: #eee;
+}
+
+.matrix__input:focus {
+  outline: none;
+}
+
+.matrix__input-active {
+  background: rgba(46, 204, 113, 0.65);
+  border: 2px solid rgb(39, 174, 96);
+}
+
+.DFS-table {
+  width: 60%;
+}
+
+.DFS-table tr {
+  width: 100%;
+  background: rgba(192, 57, 43, .15);
+}
+
+.DFS-table tr:nth-child(2n) {
+  background: rgba(192, 57, 43, .75);
+  color: #fff;
+}
+
+.DFS-table td {
+  font-size: 1.13rem;
+  padding: 5px;
+  height: 100%;
+  width: 33.3%;
+  text-align: center;
+}
+
+.input {
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  text-align: center;
+  width: 220px;
+  height: 45px;
+  border: none;
+  border-bottom: 2px solid rgb(192, 57, 43);
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  font-size: 1.05rem;
+  padding: 5px 10px;
+  text-align: center;
+  width: 220px;
+  height: 45px;
+  background: none;
+  border: 2px solid rgb(192, 57, 43);
+  border-radius: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  perspective: 800px;
+}
+
+.button:hover {
+  transform: scale(1.07);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(192, 57, 43, .5);
+}
